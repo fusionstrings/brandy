@@ -1,0 +1,9 @@
+{
+  "name": "@fusionstrings/drftless",
+  "version": "1.0.0",
+  "main": "dist/components/main.js",
+  "scripts": {
+    "dev": "babel --root-mode upward scripts -w -d dist --source-maps"
+  },
+  "type": "module"
+}
