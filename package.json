@@ -6,9 +6,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "yarn workspace www start",
-    "serve": "yarn workspace www serve",
-    "build": "yarn workspace www build"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prestart": "rm -rf dist",
+    "start": "http-server & yarn dev",
+    "serve": "http-server"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -16,10 +18,18 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "core-js": "^3.1.4"
+    "core-js": "^3.1.4",
+    "http-server": "^0.11.1",
+    "rollup": "^1.16.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-jspm": "^1.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0"
   },
-	"workspaces": [
-		"packages/*"
-	],
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }

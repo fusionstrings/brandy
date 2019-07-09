@@ -9,7 +9,7 @@ const dev = mode === "development";
 
 export default {
   // Leading "./" still important here
-  input: ["./scripts/main.mjs"],
+  input: ["./packages/www/scripts/main.js"],
   output: [
     {
       dir: "dist/esm",
