@@ -16,10 +16,12 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "core-js": "^3.1.4"
+    "core-js": "^3.1.4",
+    "jspm": "^2.0.0-beta.6",
+    "jspm-resolve": "^2.1.0"
   },
-	"workspaces": [
-		"packages/*"
-	],
+  "workspaces": [
+    "packages/*"
+  ],
   "type": "module"
 }
