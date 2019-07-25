@@ -2,8 +2,8 @@ import React from 'https://dev.jspm.io/react';
 // import B from '@fusionstrings/drftless/components/driftless.mjs';
 const Brands = {
     ansac: React.lazy(() => import('@fusionstrings/ansac/components/ansac.js')),
-    charbay: React.lazy(() => import('@fusionstrings/charbay/components/charbay.mjs')),
-    driftless: React.lazy(() => import('@fusionstrings/drftless/components/driftless.mjs'))
+    charbay: React.lazy(() => import('@fusionstrings/charbay/components/charbay.js')),
+    driftless: React.lazy(() => import('@fusionstrings/drftless/components/driftless.js'))
 }
 
 function Root({brand}){

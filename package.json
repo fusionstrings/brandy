@@ -8,7 +8,8 @@
   "scripts": {
     "start": "yarn workspace www start",
     "serve": "yarn workspace www serve",
-    "build": "yarn workspace www build"
+    "build": "yarn workspace www build",
+    "resolve": "yarn workspace www node brand"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -16,10 +17,11 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@jspm/resolve": "^1.0.0",
     "core-js": "^3.1.4"
   },
-	"workspaces": [
-		"packages/*"
-	],
+  "workspaces": [
+    "packages/*"
+  ],
   "type": "module"
 }
