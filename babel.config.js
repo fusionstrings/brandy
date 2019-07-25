@@ -5,7 +5,7 @@ module.exports = {
       "@babel/preset-env",
       {
         useBuiltIns: "usage",
-        modules: "auto",
+        modules: "false",
         shippedProposals: true,
         targets: {
           esmodules: true
@@ -14,7 +14,7 @@ module.exports = {
           version: 3,
           proposals: true
         },
-        debug: true
+        debug: false
       }
     ],
     "@babel/preset-react"
