@@ -12,13 +12,14 @@
     "resolve": "yarn workspace www node brand"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@jspm/resolve": "^1.0.0",
-    "core-js": "^3.1.4"
+    "@packem/style-plugin": "^0.1.0",
+    "core-js": "^3.2.1"
   },
   "workspaces": [
     "packages/*"
