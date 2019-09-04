@@ -1,29 +1,42 @@
 {
-  "name": "www",
+  "name": "@fusionstrings/brandy-www",
   "version": "1.0.0",
   "scripts": {
+    "prebuild": "rm -rf dist .cache",
     "compile": "babel --root-mode upward scripts -w -d dist --source-maps",
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "yarn css && rollup -c",
+    "css": "parcel build scripts/css.mjs --public-url ./",
+    "dev": "yarn css && rollup -c -w",
     "prestart": "rm -rf dist",
     "start": "http-server & yarn dev",
-    "serve": "http-server"
+    "serve": "es-dev-server"
   },
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "doiuse": "^4.2.0",
+    "es-dev-server": "^1.16.0",
     "http-server": "^0.11.1",
-    "rollup": "^1.16.4",
+    "parcel": "^1.12.3",
+    "postcss-copy": "^7.1.0",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "rollup": "^1.20.2",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-jspm": "^1.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-replace": "^2.2.0"
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "sass": "^1.22.10",
+    "stylelint": "^10.1.0"
   },
   "type": "module",
   "dependencies": {
     "@fusionstrings/ansac": "^1.0.0",
     "@fusionstrings/charbay": "^1.0.0",
     "@fusionstrings/design-system": "^1.0.0",
-    "@fusionstrings/drftless": "^1.0.0",
+    "@fusionstrings/driftless": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

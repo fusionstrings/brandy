@@ -1,3 +1,3 @@
-import Charbay from "./charbay.js";
+import Charbay from "./charbay.mjs";
 
 export { Charbay };

@@ -1,3 +1,3 @@
-import Driftless from "./components/driftless.js";
+import Driftless from "./components/driftless.mjs";
 
 export { Driftless };

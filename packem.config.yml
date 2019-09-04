@@ -1,0 +1,10 @@
+root: "./packages/components/mod.js"
+output: "./dist/bundle.js"
+# plugins:
+#   sass:
+#     # All the options below can be found here:
+#     # https://github.com/sass/node-sass#options
+#     # Don't use options that write to files since
+#     # this plugin already handles writing to files.
+#     outputStyle: compressed
+#     sourceMap: true

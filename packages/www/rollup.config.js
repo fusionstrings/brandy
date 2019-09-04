@@ -1,7 +1,4 @@
-import resolve from "rollup-plugin-node-resolve";
-import replace from "rollup-plugin-replace";
 import jspmRollup from 'rollup-plugin-jspm';
-import commonjs from "rollup-plugin-commonjs";
 import babel from "rollup-plugin-babel";
 
 const mode = process.env.NODE_ENV;
@@ -33,6 +30,5 @@ export default {
       exclude: ['/node_modules/@babel/**'],
       rootMode: 'upward'
     })
-    
   ]
 };

@@ -1,3 +1,3 @@
-import Ansac from "./ansac.js";
+import Ansac from "./components/ansac.mjs";
 
 export { Ansac };

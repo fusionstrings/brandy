@@ -1,24 +1,24 @@
 {
-  "name": "brandy",
+  "name": "@fusionstrings/brandy",
   "version": "1.0.0",
   "repository": "https://github.com/fusionstrings/brandy.git",
-  "author": "Dilip Kr. Shukla <contact@fusionstrings.com>",
+  "author": "Dilip Kr. Shukla <fusionstrings@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "yarn workspace www start",
-    "serve": "yarn workspace www serve",
-    "build": "yarn workspace www build"
+    "start": "yarn workspace @fusionstrings/brandy-www node server",
+    "serve": "yarn workspace @fusionstrings/brandy-www serve",
+    "build": "yarn workspace @fusionstrings/brandy-www build",
+    "css": "parcel build packages/ansac/styles/style.scss"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "core-js": "^3.1.4",
-    "jspm": "^2.0.0-beta.6",
-    "jspm-resolve": "^2.1.0"
+    "core-js": "^3.2.1",
+    "jspm": "^2.0.0-beta.7"
   },
   "workspaces": [
     "packages/*"

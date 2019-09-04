@@ -1,2 +1,2 @@
-import Button from "./button";
+import Button from "./button.mjs";
 export { Button };
