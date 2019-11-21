@@ -10,7 +10,7 @@ function Root({brand}){
     const Brand = Brands[brand];
     return (
         <React.Suspense fallback={<div>Loading...</div>}>
-            <h1>hu</h1>
+            <h1>Brandy</h1>
             {/* <B /> */}
             <Brand />
         </React.Suspense>

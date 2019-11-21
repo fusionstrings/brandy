@@ -1,2 +1,1 @@
-import Button from "./button.mjs";
-export { Button };
+export { default as Button } from './components/button.mjs';

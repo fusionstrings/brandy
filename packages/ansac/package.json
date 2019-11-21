@@ -2,5 +2,8 @@
   "name": "@fusionstrings/ansac",
   "version": "1.0.0",
   "main": "main.mjs",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@fusionstrings/design-system": "^1.0.0"
+  }
 }

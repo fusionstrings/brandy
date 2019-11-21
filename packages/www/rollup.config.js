@@ -1,5 +1,7 @@
 import jspmRollup from 'rollup-plugin-jspm';
 import babel from "rollup-plugin-babel";
+import url from "rollup-plugin-url";
+import postCss from 'rollup-plugin-postcss';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
@@ -13,7 +15,7 @@ export default {
       format: "esm"
     }
   ],
-  context: 'window',
+  //context: 'window',
   plugins: [
     // resolve({
     //   browser: true
@@ -26,6 +28,8 @@ export default {
     //   include: /node_modules/
     // })
     jspmRollup(),
+    postCss(),
+    url(),
     babel({
       exclude: ['/node_modules/@babel/**'],
       rootMode: 'upward'

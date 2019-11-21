@@ -1,3 +1,1 @@
-import Charbay from "./charbay.mjs";
-
-export { Charbay };
+export { default as Charbay } from './charbay.mjs';
