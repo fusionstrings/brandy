@@ -13,6 +13,10 @@ export default {
     {
       dir: "dist/esm",
       format: "esm"
+    },
+    {
+      dir: "../../public/esm",
+      format: "esm"
     }
   ],
   //context: 'window',
