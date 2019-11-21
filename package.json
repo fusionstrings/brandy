@@ -10,6 +10,7 @@
     "start": "yarn workspace @fusionstrings/brandy-www start",
     "serve": "yarn workspace @fusionstrings/brandy-www serve",
     "build": "yarn workspace @fusionstrings/brandy-www build",
+    "postbuild": "cp -R packages/www/dist public",
     "css": "parcel build packages/ansac/styles/style.scss"
   },
   "devDependencies": {
