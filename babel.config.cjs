@@ -5,7 +5,7 @@ module.exports = {
       "@babel/preset-env",
       {
         useBuiltIns: "usage",
-        modules: "auto",
+        modules: false,
         shippedProposals: true,
         targets: {
           esmodules: true

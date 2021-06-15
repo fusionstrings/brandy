@@ -1,7 +1,7 @@
 {
   "name": "@fusionstrings/ansac",
   "version": "1.0.0",
-  "main": "main.mjs",
+  "main": "mod.mjs",
   "type": "module",
   "dependencies": {
     "@fusionstrings/design-system": "^1.0.0"

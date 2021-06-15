@@ -1,7 +1,7 @@
 {
   "name": "@fusionstrings/driftless",
   "version": "1.0.0",
-  "main": "main.mjs",
+  "main": "mod.mjs",
   "scripts": {
     "dev": "babel --root-mode upward scripts -w -d dist --source-maps"
   },

@@ -5,13 +5,18 @@
   "author": "Dilip Kr. Shukla <fusionstrings@gmail.com>",
   "license": "MIT",
   "private": true,
+  "main": "packages/www/scripts/root.mjs",
   "scripts": {
+    "jb": "jspm build ./packages/www/scripts/root.mjs",
     "dev": "yarn workspace @fusionstrings/brandy-www dev",
     "start": "yarn workspace @fusionstrings/brandy-www start",
     "serve": "yarn workspace @fusionstrings/brandy-www serve",
+    "build:dev": "yarn workspace @fusionstrings/brandy-www build:dev",
     "build": "yarn workspace @fusionstrings/brandy-www build",
-    "postbuild_": "cp -R packages/www/dist public",
-    "css": "parcel build packages/ansac/styles/style.scss"
+    "build:def": "cross-env NODE_ENV=development rollup -c",
+    "css": "parcel build packages/ansac/styles/style.scss",
+    "compile:babel": "babel packages -d .compile-babel --source-maps",
+    "compile:typescript": "tsc"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -19,11 +24,30 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
-    "core-js": "^3.4.1",
-    "jspm": "^2.0.0-beta.7"
+    "@jspm/core": "^1.0.4",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/vfile-message": "^2.0.0",
+    "core-js": "^3.4.2",
+    "cross-env": "^6.0.3",
+    "rollup": "^1.30.1"
   },
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "install": "^0.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.2"
+  },
+  "jspm": {
+    "dependencies": {
+      "jspm": "file:../../jspm/jspm-cli"
+    },
+    "devDependencies": {
+      "rollup": "^1.30.1"
+    }
+  },
   "type": "module"
 }

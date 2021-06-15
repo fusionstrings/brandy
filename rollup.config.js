@@ -11,14 +11,10 @@ const dev = mode === "development";
 
 export default {
   // Leading "./" still important here
-  input: ["./scripts/main.mjs"],
+  input: ["./packages/ansac/mod.mjs", "./packages/charbay/mod.mjs", "./packages/driftless/mod.mjs", "./packages/design-system/mod.mjs", "./packages/www/scripts/main.mjs"],
   output: [
     {
       dir: "dist/esm",
-      format: "esm"
-    },
-    {
-      dir: "../../public/esm",
       format: "esm"
     }
   ],
@@ -44,8 +40,8 @@ export default {
       exclude: ['/node_modules/@babel/**'],
       rootMode: 'upward'
     }),
-    !dev && terser({
-      module: true
-    })
+    // !dev && terser({
+    //   module: true
+    // })
   ]
 };
